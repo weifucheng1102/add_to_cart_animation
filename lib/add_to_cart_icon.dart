@@ -4,11 +4,13 @@ class AddToCartIcon extends StatefulWidget {
   final GlobalKey<CartIconKey> key;
   final Widget icon;
   final Color? colorBadge;
+  final bool showText;
 
   const AddToCartIcon({
     required this.key,
     required this.icon,
     this.colorBadge,
+    this.showText = false;
   }) : super(key: key);
 
   @override
@@ -53,6 +55,7 @@ class CartIconKey extends State<AddToCartIcon>
             position: _offsetAnimation,
             child: this.widget.icon,
           ),
+          widget.showText==false?SizeBox():
           Positioned(
               left: 30,
               top: 5,
