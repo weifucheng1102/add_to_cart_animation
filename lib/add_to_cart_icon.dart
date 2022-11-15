@@ -55,7 +55,7 @@ class CartIconKey extends State<AddToCartIcon>
             position: _offsetAnimation,
             child: this.widget.icon,
           ),
-          widget.showText==false?SizeBox():
+          widget.showText==false?SizedBox():
           Positioned(
               left: 30,
               top: 5,
