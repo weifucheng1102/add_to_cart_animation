@@ -10,7 +10,7 @@ class AddToCartIcon extends StatefulWidget {
     required this.key,
     required this.icon,
     this.colorBadge,
-    this.showText = false;
+    this.showText = false,
   }) : super(key: key);
 
   @override
